@@ -1,6 +1,7 @@
-<ul class="tag">
-  <li class="tag__item"><strong>Tags: </strong></li>
-  {% for tag in page.tags %}
-    <li class="tag__item"><a href="{{ site.url }}/tag/{{ tag }}" title="{{ tag }}">#{{ tag }}</a></li>
+<div class="sidebar-module">
+  <h4>{{ site.locales[site.default_locale].Tags }}</h4>
+  {% for tag in site.tags %}
+    <a href="{{ site.baseurl }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
   {% endfor %}
-</ul>
+</div>
+
