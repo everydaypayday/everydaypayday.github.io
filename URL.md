@@ -2,9 +2,9 @@
 
 layout: page
 
-title: About3
+title: URL
 
-permalink: /about/
+permalink: /URL/
 
 ---
 
